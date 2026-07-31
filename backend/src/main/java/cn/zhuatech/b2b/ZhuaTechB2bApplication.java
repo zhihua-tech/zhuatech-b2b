@@ -1,0 +1,8 @@
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+package cn.zhuatech.b2b;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+@SpringBootApplication
+public class ZhuaTechB2bApplication {
+    public static void main(String[] args) { SpringApplication.run(ZhuaTechB2bApplication.class, args); }
+}
