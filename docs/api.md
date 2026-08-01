@@ -9,3 +9,4 @@
 | GET | `/api/admin/work-orders` | 订货单清单 |
 | GET | `/api/shopfloor/dashboard` | 工程师任务工作台 |
 | POST | `/api/shopfloor/work-orders/{id}/reports` | 提交履约结果 |
+| POST | `/api/admin/credit-decision` | 订单授信风险与释放条件 |

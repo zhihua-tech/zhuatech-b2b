@@ -70,3 +70,7 @@ docker compose up --build
 | ![知华科技咨询二维码 1](docs/images/zhuatech-wechat-consulting.png) | ![知华科技咨询二维码 2](docs/images/zhuatech-wechat-consulting-2.png) |
 
 关键词：B2B 订货系统源码、企业商城、经销商订货、订单履约、Java B2B、Vue 企业订货、知华科技。
+
+## 订单授信决策
+
+新增 `POST /api/admin/credit-decision`，把新订单金额、已用额度、逾期天数和履约争议合并为授信利用率和风险分。超额度订单自动阻断，并给出提高预付款、结清逾期和关闭争议等释放条件。
