@@ -74,3 +74,7 @@ docker compose up --build
 ## 订单授信决策
 
 新增 `POST /api/admin/credit-decision`，把新订单金额、已用额度、逾期天数和履约争议合并为授信利用率和风险分。超额度订单自动阻断，并给出提高预付款、结清逾期和关闭争议等释放条件。
+
+## 订单履约风险
+
+新增 `POST /api/b2b/insights/fulfillment-risk`，结合分配率、发货进度、承诺日期、供应商延迟和库存冻结，输出 `ON_TRACK`、`EXPEDITE` 或 `BLOCK_OR_NOTIFY`。
