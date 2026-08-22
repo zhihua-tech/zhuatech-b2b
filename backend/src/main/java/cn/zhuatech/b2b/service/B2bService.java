@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.b2b.service;
 import cn.zhuatech.b2b.common.BusinessException; import cn.zhuatech.b2b.dto.B2bDto.*; import cn.zhuatech.b2b.model.*; import cn.zhuatech.b2b.repository.*; import org.springframework.stereotype.Service; import org.springframework.transaction.annotation.Transactional; import java.util.*;
 @Service @Transactional(readOnly=true) public class B2bService {

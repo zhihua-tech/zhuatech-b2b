@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'B2B',systemName:'企业订货协同平台',englishName:'BUSINESS TO BUSINESS COMMERCE',
  theme:{primary:'#6750a4',dark:'#382b5d',accent:'#3d87bb'},

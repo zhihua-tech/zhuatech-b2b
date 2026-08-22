@@ -1,4 +1,4 @@
-/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. */
+/* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.b2b.model;
 import jakarta.persistence.*; import java.time.LocalDateTime;
 @Entity @Table(name="b2b_fulfillment_issue") public class FulfillmentIssue extends BaseEntity {
