@@ -78,3 +78,7 @@ docker compose up --build
 ## 订单履约风险
 
 新增 `POST /api/b2b/insights/fulfillment-risk`，结合分配率、发货进度、承诺日期、供应商延迟和库存冻结，输出 `ON_TRACK`、`EXPEDITE` 或 `BLOCK_OR_NOTIFY`。
+
+## 企业级订单释放治理
+
+新增 `POST /api/enterprise/b2b/order-release`，把合同、协议价、授信、库存、税务、出口许可、交期和采购凭证统一纳入订单门禁，返回 `RELEASE / REVIEW / BLOCKED`。详见 [企业订单释放说明](docs/ENTERPRISE_ORDER_RELEASE.md)。
