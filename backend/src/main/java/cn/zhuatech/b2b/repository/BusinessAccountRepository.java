@@ -1,3 +1,9 @@
 /* Copyright 2026 Shanghai Rujing Zhihua Information Technology Co., Ltd. · https://www.zhuatech.cn/ */
 package cn.zhuatech.b2b.repository; import cn.zhuatech.b2b.model.BusinessAccount; import org.springframework.data.jpa.repository.JpaRepository; import java.util.Optional;
-public interface BusinessAccountRepository extends JpaRepository<BusinessAccount,Long>{Optional<BusinessAccount> findByCode(String code);}
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
+public interface BusinessAccountRepository extends JpaRepository<BusinessAccount,Long>{/**
+                                                                                        * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+                                                                                        */
+Optional<BusinessAccount> findByCode(String code);}

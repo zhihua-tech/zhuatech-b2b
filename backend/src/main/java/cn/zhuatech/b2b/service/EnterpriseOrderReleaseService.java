@@ -7,8 +7,14 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class EnterpriseOrderReleaseService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Assessment assess(Request request) {
         List<String> blockers = new ArrayList<>();
         List<String> actions = new ArrayList<>();
@@ -31,13 +37,22 @@ public class EnterpriseOrderReleaseService {
         return new Assessment(Decision.RELEASE, true, blockers, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String orderNo, @NotBlank String customerCode,
                           boolean contractActive, boolean agreementPriceMatched,
                           boolean creditApproved, @Min(1) int requestedQuantity,
                           @Min(0) int availableInventory, boolean taxProfileValid,
                           boolean exportControlled, boolean exportLicenseValid,
                           boolean deliveryPromiseConfirmed, boolean purchaseOrderAttached) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Assessment(Decision decision, boolean releasable, List<String> blockers,
                              List<String> actions) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { RELEASE, REVIEW, BLOCKED }
 }

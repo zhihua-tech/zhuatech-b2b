@@ -11,8 +11,14 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class CreditDecisionService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result evaluate(Request request) {
         BigDecimal projectedExposure = request.outstandingBalance().add(request.orderAmount());
         BigDecimal utilization = request.creditLimit().signum() == 0 ? BigDecimal.valueOf(999)
@@ -29,11 +35,17 @@ public class CreditDecisionService {
         return new Result(request.accountName(), projectedExposure, utilization.setScale(2, RoundingMode.HALF_UP), score, decision, actions);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String accountName,
                           @DecimalMin("0") BigDecimal orderAmount,
                           @DecimalMin("0") BigDecimal creditLimit,
                           @DecimalMin("0") BigDecimal outstandingBalance,
                           @Min(0) int overdueDays, @Min(0) int fulfillmentIssueCount) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String accountName, BigDecimal projectedExposure,
                          BigDecimal creditUtilizationPercent, int riskScore,
                          String decision, List<String> actions) {}
