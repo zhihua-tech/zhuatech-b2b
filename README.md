@@ -1,5 +1,7 @@
 # ZhuaTech B2B
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 企业客户订货协同平台：让协议价格、可订库存、订单履约和物流回单真正连起来。
 
 [产品官网](https://www.zhuatech.cn/) · [部署说明](deploy/README.md) · [接口文档](docs/api.md) · [许可条款](LICENSE)
